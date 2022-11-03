@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title> CYBER-SERVICES</title>
+
+    <!--<title>Responsive Navigation Menu Bar</title>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA5pJREFUWEell+Fd3DAMxf+aADYonaB0AmAC6ATABIUJChNQJuCYAJiAY4LCBKUT9DqB+1PsJLItJ7k2n+4cW5af3ntWBPMIEKqBahS6oTTuvB5DCEIYptrQrd8aLn9aG0xunHLsIi2e6E41CdlAedCZLSwgBcROojMHrhFagqtT5/Zx5kErww3HGIPm/HAOtQdyDGGDcJ8Tb7Zok0eOCC3jZ1+OfYRnArsp8go4L+p2AnwF3gUuA2za7Krp4WQ8meEjwnGByhGwToGugG8m6Cvwefi/gPPtuf7izBnS4mvgCmGPwE+H5YqgIuk+Jf+W0Tiu0jL9jgssivIC4RD4nkpVxrwFuRgl2JaaLDbDMYngWM2twEWIZTtwTngPnFXjnuda03WgVkQ+AW8Im2S5ygkdM4+cQ1ghrAicOglZji1QmT9lH3iGQU09D1RBD2bJG6Bz9Snf6dgLoOU0lU5XirNvZoyFD70DHwpPOBJYh7jxmcAmwAVJ1im+8kjLswPyBOEsotslpeV+I0QbyLjY/2s4rJ74h8OVp4RCFa8y1ZFzWnZFukdRk1G0H73CNBDiQuAm6jtjnoG/Bbsd79YqgjdFJE3qo+FlhpeX6BBkKqEk40OQg/Rb1aTubFuONcKB04Pk3mRcxEtoD6zBDUBZ+e4KPARL2BhJD3NrgrasIJpp8TTaj26WOquV8J+kFpW9ZvgKoZD/EP08WkB37DyhkQGXyUgzbmeXa02Z7gSqDlWcquc1xSvuq/qCDPH+0vmrkA5WlLJ7XyE0c9c5gHYyvnN63TJ2JC5o+RWlHTMh9ybzoqWyCsbUQqu/3Hmka4wpAurSKv0Tgd0Q0Y4XreM50wnluxjl1dtPIN0nZczQSX9GZdmKjgfC6VCm7eqssRSVLxVnbMOQdoy3/eQGsoLgXJjbZiUbCFq+isi2fFnJRliG1A8JPPvXQv55ZiFtpZruPiV6s3yNhHr8Gu3EDDgT95oG7hx6IukJzQhrQmq4qghTIccu16HENchVq3usOZTvswI57T6HU6HH322lOAZrJ3dXxr8hFPsa4zvbEjlPOq1WtT0uSMhxqRjPaVkbPjRfRW2F9137WORDcZK6rDZTXvOumb0UlnvQKOuv1NyNsncOMK2yQWydV+nJ+q/V3uzU8MomTudodzj20RHlukNclFBjUq+byapsS7FFCc1IZIkBThjJ7Ktpp55dXnn7Fiv8qXVC28L+3ynkAf4Cdr1PNaaAgAcAAAAASUVORK5CYII="/><a href="#">Blackie solution </a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Blackie solution</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-server"></i></i> Our Services</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-mobile-phone"></i></a>Contact</li>
+                    <li><a href="#"><i class="fa fa-fw fa-superpowers"></i>About Us</a></li>
+                   
+                   
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+</script>
+
+</body>
+</html>
