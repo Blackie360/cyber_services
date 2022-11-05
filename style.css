@@ -239,7 +239,7 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
-@media (max-width: 790px) {
+@media (max-width: 850px) {
     nav .nav-bar .sidebarOpen{
         display: block;
     }
@@ -253,7 +253,7 @@ body.dark .search-field i{
         padding: 20px;
         background-color: var(--side-nav);
         z-index: 100;
-        transition: all 0.4s ease;
+        transition: all 0.6s ease;
     }
 
     nav.active .menu{
@@ -262,7 +262,7 @@ body.dark .search-field i{
 
     nav.active .nav-bar .navLogo a{
         opacity: 0;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
 
     .menu .logo-toggle{
@@ -287,5 +287,71 @@ body.dark .search-field i{
     .nav-links li a{
         display: block;
         margin-top: 20px;
+    }
+}
+@media (max-width: 520px) {
+    nav .nav-bar .sidebarOpen{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.6s ease;
+    }
+
+    nav.active .menu{
+        left: -0%;
+        margin-left: 0px;
+        padding-left: 0px;
+        position: fixed;
+        width: auto;
+        overflow: hidden;
+        
+    }
+
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.5s ease;
+        padding-left: 0;
+        padding-right: 100%;
+        font-size: 15px;
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 5px;
+        position: absolute;
+        left: 20%;
+        right: 80%;
+        
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 5px;
+        margin-left: 0px;
+        padding-top: 4px;
     }
 }
