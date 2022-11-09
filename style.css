@@ -360,7 +360,7 @@ section {
     display: grid;
     place-items: center;
     background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(255, 0, 0, 0.007)),url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-    
+    overflow: hidden;
   }
   .row {
     display: flex;
@@ -442,3 +442,55 @@ section {
   }
   /*button */
   /*carsoule*/
+  /*contact us */
+  input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 18px;
+ }
+ input[type="submit"] {
+    background-color: rgb(139, 76, 175);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+ }
+ label {
+    font-weight: bold;
+ }
+ .contactImg {
+    width: 300px;
+    height: 300px;
+ }
+ input[type="submit"]:hover {
+    background-color: #45a049;
+ }
+ .contactForm {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    padding: 10px;
+    max-width: 1000px;
+ }
+ .contactCol {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+    padding: 20px;
+ }
+ .contactSection:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ @media screen and (max-width: 600px) {
+    .contactCol, input[type="submit"] {
+       width: 100%;
+       margin-top: 0;
+    }
+ }
