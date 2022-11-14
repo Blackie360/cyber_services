@@ -495,3 +495,21 @@ body.dark .search-field i{
   opacity: 0;
   transform: translateY(-110px) rotateX(90deg);
 }
+/*button*/
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 5px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
