@@ -468,8 +468,8 @@ body.dark .search-field i{
   top: 0;
   left: 0;
   z-index: 1;
-  height: 220px;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
   padding: 30px;
   color: #fff;
   opacity: 0;
