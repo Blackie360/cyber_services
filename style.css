@@ -434,7 +434,7 @@ body.dark .search-field i{
   background: #fff;
   height: 220px;
   width: 100%;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
@@ -464,6 +464,7 @@ body.dark .search-field i{
 }
 
 .box .back-face {
+display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
@@ -513,3 +514,4 @@ button {
     cursor: pointer;
     margin: 5px;
   }
+  /*socials*/

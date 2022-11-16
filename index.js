@@ -42,4 +42,18 @@ body.addEventListener("click" , e =>{
     }
 });
 
-// bubble
+// STK PUSH
+function pay() {
+
+  var url = "https://tinypesa.com/api/v1/express/initialize";
+
+  fetch(url, {
+      body: "amount=100&msisdn=0703198968&account_no=200",
+      headers: {
+          Apikey: "Me3s8tLM8vW",
+          "Content-Type": "application/x-www-form-urlencoded",
+      },
+      method: "POST",
+  });
+
+}
